@@ -1,0 +1,22 @@
+timezone: Asia/Tokyo
+title: Try htmx
+description:
+
+exclude: ['README.md', 'vendor', 'Gemfile', 'Gemfile.lock']
+
+collections:
+  - tries
+
+repository: atomita/try-htmx
+
+plugins:
+  - jekyll-github-metadata
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jemoji
+
+# markdown: kramdown
+# kramdown:
+#   input: GFM
+#   syntax_highlighter: rouge
