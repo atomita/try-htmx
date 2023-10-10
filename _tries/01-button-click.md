@@ -10,12 +10,12 @@ name: Button click
 </button>
 ```
 
-<div class="absolute bg-gray-400 rounded pl-1 pr-1 text-xs">api/01-button-click.html</div>
+<div style="position:absolute; background:gray; padding:0 0.5rem; border-radius:0.5rem; font-size:0.5rem; color:white">api/01-button-click.html</div>
 
 ```html
 Clicked
 ```
 
-<button data-hx-get="api/01-button-click.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+<button data-hx-get="api/01-button-click.html">
   Let's click
 </button>
