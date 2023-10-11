@@ -35,3 +35,45 @@ Clicked
   Let's click
 </button>
 <span class="target-01-button-click"></span>
+
+<br>
+`hx-trigger`属性で任意のeventと修飾子  
+複数指定可能
+
+once修飾子
+```html
+<button data-hx-get="api/01-button-click.html"
+        data-hx-trigger="click once">
+  Let's click
+</button>
+```
+
+<button data-hx-get="api/01-button-click.html" data-hx-trigger="click once">
+  Let's click
+</button>
+
+delay修飾子
+```html
+<button data-hx-get="api/01-button-click.html"
+        data-hx-trigger="click delay:3s">
+  Let's click
+</button>
+```
+
+<button data-hx-get="api/01-button-click.html" data-hx-trigger="click delay:3s">
+  Let's click
+</button>
+
+throttle修飾子
+```html
+<button data-hx-get="api/01-button-click.html"
+        data-hx-trigger="click throttle:3s">
+  Let's click
+</button>
+```
+
+<button data-hx-get="api/01-button-click.html" data-hx-trigger="click throttle:3s">
+  Let's click
+</button>
+
+delayとthrottleの掛け合わせは駄目だったので[audit](https://rxjs.dev/api/operators/audit)も実装されると助かるなぁ
