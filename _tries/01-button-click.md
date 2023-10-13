@@ -76,4 +76,4 @@ throttle修飾子
   Let's click
 </button>
 
-delayとthrottleの掛け合わせは駄目だったので[audit](https://rxjs.dev/api/operators/audit)も実装されると助かるなぁ
+textareaなどだとdelayとchangedの掛け合わせで[audit](https://rxjs.dev/api/operators/audit)みたいになるっぽい
