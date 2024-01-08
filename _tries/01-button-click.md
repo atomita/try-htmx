@@ -77,3 +77,72 @@ throttle修飾子
 </button>
 
 textareaなどだとdelayとchangedの掛け合わせで[audit](https://rxjs.dev/api/operators/audit)みたいになるっぽい
+
+
+<br>
+Trigger Filters  
+event → globalの順で解決を試みるらしい  
+thisはelement
+
+評価値がtrueの場合だけtriggerされます
+
+
+`ctrlKey`
+```html
+<button data-hx-get="api/01-button-click.html"
+        data-hx-trigger="click[ctrlKey]">
+  Let's click with control key
+</button>
+```
+
+<button data-hx-get="api/01-button-click.html" data-hx-trigger="click[ctrlKey]">
+  Let's click with control key
+</button>
+
+`altKey`
+```html
+<button data-hx-get="api/01-button-click.html"
+        data-hx-trigger="click[altKey]">
+  Let's click with alt key
+</button>
+```
+
+<button data-hx-get="api/01-button-click.html" data-hx-trigger="click[altKey]">
+  Let's click with alt key
+</button>
+
+`this`
+```html
+<button data-hx-get="api/01-button-click.html"
+        data-hx-trigger="click[this.autofocus]"
+        autofocus>
+  Let's click
+</button>
+```
+
+<button data-hx-get="api/01-button-click.html" data-hx-trigger="click[this.autofocus]" autofocus>
+  Let's click
+</button>
+
+
+global function
+```html
+<script>
+  function isButton(elm) {
+    return elm instanceof HTMLButtonElement
+  }
+</script>
+<button data-hx-get="api/01-button-click.html"
+        data-hx-trigger="click[isButton(this)]">
+  Let's click
+</button>
+```
+
+<script>
+  function isButton(elm) {
+    return elm instanceof HTMLButtonElement
+  }
+</script>
+<button data-hx-get="api/01-button-click.html" data-hx-trigger="click[isButton(this)]">
+  Let's click
+</button>
