@@ -82,9 +82,10 @@ textareaなどだとdelayとchangedの掛け合わせで[audit](https://rxjs.dev
 <br>
 Trigger Filters  
 event → globalの順で解決を試みるらしい  
-thisはelement
+`this`はelement
 
-評価値がtrueの場合だけtriggerされます
+評価値が`true`の場合だけtriggerされます  
+ただし、buttonで`this.disabled`は`true`でもtriggerされません
 
 
 `ctrlKey`
