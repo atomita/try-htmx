@@ -10,7 +10,7 @@ name: Button click
 </button>
 ```
 
-<div style="position:absolute; background:gray; padding:0 0.5rem; border-radius:0.5rem; font-size:0.5rem; color:white">api/01-button-click.html</div>
+<div style="position:absolute; background:gray; padding:0 0.5rem; border-radius:0.5rem; font-size:1rem; color:white">api/01-button-click.html</div>
 
 ```html
 Clicked
